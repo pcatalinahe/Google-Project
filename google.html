@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en-us"></html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Catalina's Google</title>
+    <link rel="icon" type="image/webp" href="favicon.webp" sizes="16x16"> <!-- adds favicon // FIXXXXXX -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <script>
+        function validateForm() {
+            let x= document.forms["searchForm"]["getSearch"].value;
+            if (x == "") {
+                alert("You searched for: " + getSearch);
+                return;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+        <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US&pli=1">Store</a>
+        <div class="right">
+        <a href="https://mail.google.com/mail/&amp;ogbl">Gmail</a>
+        <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+        <a href="https://labs.google.com/search?source=hp"><img src="images/search.png" width="20" height="20" alt="Erlenmeyer flask icon"> </a>
+        <a href="google_apps.html">Google Apps</a>
+        <a href="account.html">Google Account</a>
+        </div>
+    </nav>
+    </header>
+
+    <div class="google">
+        <img class="logo" src="images/logo.png" alt="Google Logo" height="92" width="272">
+    </div>
+
+    <form name="searchForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+    <div class="bar">  <!-- /*add search bar*/ -->
+        <span class="material-symbols-outlined">search</span>       
+         <input class="searchInput" type="search" id="getSearch">
+         <a href="voice.png"><img src="images/voice.png" alt="microphone colorful icon" width="40" height="20"></a>
+         <a href="https://www.google.com/imghp?hl=en&ogbl"><img src="images/images.png" alt="colorful camera icon" width="24" height="24"></a>
+    </div>
+    </form>
+
+    <div id="buttons">    <!-- adds regular search and random search  buttons -->
+        <button id ="searchButton" type="submit">Google Search</button>
+    <!-- funny, stellar, hungry, playful, adventurous, doodley, artistic -->
+        <button id="searchRandom" type="submit">I'm Feeling Lucky</button>
+    </div>
+
+     <div class="empty">
+     </div>
+
+    <footer class="footer">
+    <div class="wrap">
+        <div class="hold">
+         <div class="firstSec"> <!--separates first 3 links of footer for accurate spacing -->
+            <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+         </div>
+         <div class="secondSec"> <!--separates paragraph to center on page -->
+            <a href="https://sustainability.google/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="> <p class="climate"><img class="leaf" src="images/climate.png" alt="Leaf image" width="15" heigh="15"> Our third decade of climate action: join us</p></a>
+         </div>
+         <div class="thirdSec"> <!--separates last 3 links of footer to align right -->
+             <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+             <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+             <a href="settings.html">Settings</a>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
